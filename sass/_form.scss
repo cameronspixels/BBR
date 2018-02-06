@@ -5,14 +5,14 @@
 }
 
 .contact--heading {
-  color: var(--color--blue);
+  color: #00527D;
 }
 
 .contact--label {
   margin-top: 2rem;
   display: block;
   font-size: 1.1rem; font-weight: 600;
-  color: var(--color--grey);
+  color: #42413C;
 }
 
 .contact--input, .contact--textbox {
@@ -20,8 +20,8 @@
   padding: 0.5rem 0.8rem;
   width: 80%; 
   font-size: 1rem; @include form--fonts; font-weight: 500; 
-  background-color: var(--color--none); color: var(--color--grey);
-  border: 3px solid var(--color--grey); border-radius: 2px;
+  background-color: rgba(0,0,0,0); color: #42413C;
+  border: 3px solid #42413C; border-radius: 2px;
   outline: none;
 }
 
@@ -42,7 +42,7 @@
 .contact--file {
   margin-top: 1rem;
   width: 100%;
-  color: var(--color--grey); font-size: 1rem; @include form--fonts;
+  color: #42413C; font-size: 1rem; @include form--fonts;
 }
 
 .contact--preference--choice {
@@ -55,7 +55,7 @@
 }
 
 .preference--label {
-  color: var(--color--grey);
+  color: #42413C;
 }
 
 .contact--button {
@@ -63,8 +63,8 @@
   padding: 0.6rem 4rem;
   @include form--fonts;
   font-weight: 600; font-size: 1rem;
-  background-color: var(--color--grey);
-  color: var(--color--white);
+  background-color: #42413C;
+  color: #FFF;
   border: none;
   border-radius: 30px;
 }
