@@ -1,0 +1,95 @@
+@mixin form--fonts {
+  font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+}
+.contact--form {
+}
+
+.contact--heading {
+  color: var(--color--blue);
+}
+
+.contact--label {
+  margin-top: 2rem;
+  display: block;
+  font-size: 1.1rem; font-weight: 600;
+  color: var(--color--grey);
+}
+
+.contact--input, .contact--textbox {
+  margin-top: 1rem;
+  padding: 0.5rem 0.8rem;
+  width: 80%; 
+  font-size: 1rem; @include form--fonts; font-weight: 500; 
+  background-color: var(--color--none); color: var(--color--grey);
+  border: 3px solid var(--color--grey); border-radius: 2px;
+  outline: none;
+}
+
+.contact--input {
+  max-width: 250px;
+}
+
+.contact--textbox {
+  min-height: 150px;
+  max-width: 80%;
+  line-height: 1.4rem;
+}
+
+.contact--preferences {
+  display: block;
+}
+
+.contact--file {
+  margin-top: 1rem;
+  width: 100%;
+  color: var(--color--grey); font-size: 1rem; @include form--fonts;
+}
+
+.contact--preference--choice {
+  display: block;
+  padding-top: 1rem;
+}
+
+.contact--checkbox {
+  margin-right: 0.5rem;
+}
+
+.preference--label {
+  color: var(--color--grey);
+}
+
+.contact--button {
+  margin-top: 2rem;
+  padding: 0.6rem 4rem;
+  @include form--fonts;
+  font-weight: 600; font-size: 1rem;
+  background-color: var(--color--grey);
+  color: var(--color--white);
+  border: none;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact--textbox {
+    max-width: 600px;
+  }
+  .contact--file {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .contact--label, .contact--input {
+    width: 80%;
+    max-width: 300px;
+  }
+  .contact--flex {
+    display: flex;
+  }
+  .contact--order--1 {
+    width: 50%;
+    order: 1;
+  }
+  .contact--order--2 {
+    width: 50%;
+    order: 2;
+  }
+}
