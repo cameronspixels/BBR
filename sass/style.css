@@ -43,6 +43,13 @@ body {
   text-align: center;
   color: #C9D300; }
 
+.sub--heading {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2rem; }
+
 .logo--primary {
   margin: 0 auto 2rem auto;
   width: 200px;
@@ -326,6 +333,12 @@ body {
   color: #C9D300;
   text-align: center; }
 
+.heading--three {
+  margin: 0;
+  padding-top: 3rem;
+  font-size: 2rem;
+  color: #C9D300; }
+
 .geo--map, .contact--map {
   height: 300px;
   width: 100%;
@@ -381,11 +394,40 @@ body {
   margin: 0 0 2rem 1rem;
   font-weight: 400; }
 
+.testimonial--break {
+  margin: 3rem auto;
+  width: 50%;
+  display: block;
+  border: 0.25px solid #42413C; }
+
 .video--embed {
   margin-top: 2rem;
   width: 100%;
   min-height: 300px;
   border: none; }
+
+.news--seperator {
+  margin-top: 3rem; }
+
+.news--read--link {
+  top: 2rem; }
+
+.blue--bg--button {
+  margin: 3rem auto 1rem auto;
+  padding: 0.6rem 1rem;
+  display: block;
+  max-width: 40%;
+  text-decoration: none;
+  text-align: center;
+  color: #FFF;
+  font-weight: 600;
+  border: 4px solid #FFF;
+  border-radius: 30px;
+  transition: color 220ms ease-in-out, border-color 220ms ease-in-out; }
+  .blue--bg--button:hover {
+    color: #C9D300;
+    border-color: #C9D300;
+    transition: color 220ms ease-in-out, border-color 220ms ease-in-out; }
 
 @media screen and (min-width: 800px) {
   .video--embed {
@@ -452,6 +494,9 @@ body {
   color: #FFF;
   border: none;
   border-radius: 30px; }
+  .contact--button:hover {
+    background-color: #00527D;
+    cursor: pointer; }
 
 @media screen and (min-width: 1024px) {
   .contact--textbox {
@@ -482,7 +527,8 @@ body {
 
 .footer--address, .footer--info {
   margin: 0 auto;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  font-style: normal; }
 
 .footer--text {
   margin: 0 0 0.2rem 0; }
@@ -515,8 +561,103 @@ body {
     width: 100%;
     order: 3;
     text-align: center; } }
-/* Desktop viewport, screens 1024px and above */
+.insurance--main {
+  min-height: 100vh;
+  padding: 2rem 5%;
+  background-image: url(../temp_assets/bg/bg--blue--2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.insurance--header {
+  margin: 0;
+  padding: 4rem 5% 0 5%;
+  font-size: 2.5rem;
+  color: #C9D300;
+  text-align: center; }
+
+.insurance--sub--header {
+  margin: 0 auto;
+  padding: 3rem 5% 0 5%;
+  max-width: 750px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center; }
+
+.insurance--large {
+  padding: 1rem 0 0 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+
+.insurance--help {
+  margin: 0 auto;
+  padding: 2rem 5% 0 5%;
+  max-width: 750px;
+  font-weight: 300;
+  color: #FFF;
+  text-align: center; }
+
+.insurance--selection {
+  margin: 3rem auto;
+  display: block;
+  max-width: 60%;
+  padding: 1rem 2rem;
+  border: 4px solid #C9D300;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #FFF;
+  text-align: center;
+  line-height: 1.6rem;
+  text-decoration: none; }
+  .insurance--selection:hover {
+    color: #C9D300; }
+
+.insurance--back {
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+  padding: 0.5rem 2rem;
+  color: #FFF;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 4px solid #FFF;
+  border-radius: 30px; }
+
 @media screen and (min-width: 1024px) {
+  .insurance--main {
+    padding: 0 20px; }
+
+  .insurance--header {
+    padding: 6rem 0 0 0;
+    font-size: 3.5rem; }
+
+  .insurance--sub--header {
+    padding: 3rem 0 0 0; }
+
+  .insurance--selection--container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%; }
+
+  .insurance--selection {
+    margin: 2rem auto;
+    display: inline-block;
+    width: 33%; }
+
+  .insurance--back {
+    margin: 2rem 1rem;
+    display: inline-block;
+    max-width: 150px;
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem; } }
+/* Desktop viewport, screens 1024px and above */
+@media screen and (min-width: 1020px) {
   .heading--two {
     padding: 3rem 0 0 0;
     font-size: 3rem;

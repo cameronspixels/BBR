@@ -65,6 +65,10 @@
   color: #FFF;
   border: none;
   border-radius: 30px;
+  &:hover {
+    background-color: #00527D;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1024px) {
