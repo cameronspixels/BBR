@@ -10,7 +10,7 @@
 }
 
 @mixin fonts {
-  font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif; font-size: 100%; font-weight: 300;
+  font-family: 'Raleway', 'Avenir Next', 'Roboto', 'Helvetica Neue', 'Helvetica','Arial', sans-serif; font-size: 100%; font-weight: 300;
 }
 
 body {
@@ -21,15 +21,28 @@ body {
 
 .link--white {
   color: #FFF;
-  text-decoration: none;
-  border-bottom: 1px solid #FFF;
-  transition: color 220ms ease-in-out, border-color 110ms ease-in-out;
-
+  border-color: #FFF;
   &:hover {
     color: #C9D300;
     border-color: #C9D300;
     transition: color 220ms ease-in-out, border-color 110ms ease-in-out;
   }
+}
+
+.link--blue {
+  color: #42413C;
+  border-color: #42413C;
+  &:hover {
+    color: #00527D;
+    border-color: #00527D;
+    transition: color 220ms ease-in-out, border-color 110ms ease-in-out;
+  }
+}
+
+.regular--link {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: color 220ms ease-in-out, border-color 110ms ease-in-out;
 }
 
 /* Import Header and Nav Partials */
@@ -206,7 +219,7 @@ body {
   border: 0.25px solid #42413C;
 }
 
-.video--embed {
+.content--embed {
   margin-top: 2rem;
   width: 100%;
   min-height: 300px;
@@ -218,6 +231,8 @@ body {
 }
 
 .news--read--link {
+  margin-top: 1rem;
+  display: inline-block;
   top: 2rem;
 }
 
@@ -241,7 +256,7 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  .video--embed {
+  .content--embed {
     min-height: 400px;
   }
 }

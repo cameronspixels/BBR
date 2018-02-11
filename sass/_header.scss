@@ -9,7 +9,7 @@
 
 .heading--one {
   margin: 0;
-  font-size: 2rem; font-weight: 700;
+  font-size: 2rem; font-weight: 600;
   line-height: 2.8rem;
   text-align: center;
   color: #C9D300;
@@ -61,5 +61,22 @@
   }
   .heading--one {
     font-size: 3.5rem;
+  }
+  .logo--subpage {
+    margin: 0 2rem 0 auto;
+  }
+  .heading--subpage {
+    margin: 0 auto 0 2rem;
+  }
+  .header--subpage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .subpage--header--size {
+    height: 70vh;
+    .logo--primary {
+      width: 250px;
+    }
   }
 }

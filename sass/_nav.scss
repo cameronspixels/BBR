@@ -11,7 +11,7 @@
   overflow: hidden;
   list-style-type: none;
   background-color: #00527D;
-  font-weight: 700; font-size: 1.2rem;
+  font-weight: 600; font-size: 1.2rem;
   transform: translateX(320px);
   transition: transform 330ms ease-out;
 }
@@ -161,12 +161,11 @@
     padding: 5px 25px;
     display: block;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     color: #FFF;
     &:hover {
-      font-weight: 600;
-      color: #FFF;
+      color: #C9D300;
     }
   }
   .nav--primary--list--content {
@@ -176,8 +175,7 @@
     transform: translateY(0);
   }
   .nav--active--link {
-    font-weight: 600;
-    color: #FFF;
+    color: #C9D300;
   }
   .nav--contact {
     padding: 0;
