@@ -41,9 +41,9 @@ body {
   height: 85vh;
   padding: 0 20px;
   position: relative;
-  background-image: url(../temp_assets/bg/bg--blue--main.jpg);
+  background-image: url(../img/background/blue--back.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   background-attachment: fixed; }
 
 .heading--one {
@@ -311,17 +311,23 @@ body {
   background-position: center center;
   background-attachment: fixed; }
 
-.bg--sect--1 {
-  background-image: url(../temp_assets/bg/bg--blue--2.jpg); }
-
 .bg--white {
   background-color: #FFF; }
 
 .bg--white--1 {
-  background-image: url(../temp_assets/bg/bg--white--1.jpg); }
+  background-image: url(../img/background/white--valet.jpg); }
+
+.bg--white--2 {
+  background-image: url(../img/background/white--paint.jpg); }
+
+.bg--white--3 {
+  background-image: url(../img/background/white--bbr.jpg); }
+
+.bg--blue--1 {
+  background-image: url(../img/background/blue--wash.jpg); }
 
 .bg--blue--2 {
-  background-image: url(../temp_assets/bg/bg--blue--2.jpg); }
+  background-image: url(../img/background/blue--paintgun--2.jpg); }
 
 .bg--grey {
   background-color: #42413C; }
