@@ -38,7 +38,7 @@ body {
 
 /* Import Header and Nav Partials */
 .header--primary {
-  height: 90vh;
+  height: 85vh;
   padding: 0 20px;
   position: relative;
   background-image: url(../temp_assets/bg/bg--blue--main.jpg);
@@ -72,6 +72,26 @@ body {
   transform: translate(-50%, -60%);
   position: absolute; }
 
+.call--to--action {
+  margin: 2rem auto 0 auto;
+  padding: 0.5rem 1rem;
+  display: block;
+  border: 4px solid;
+  width: calc(100% - 2rem);
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 600;
+  transition: color 220ms ease-in-out, border-color 220ms ease-in-out; }
+
+.white--button {
+  border-color: #FFF; }
+  .white--button:hover {
+    border-color: #C9D300;
+    color: #C9D300;
+    transition: color 220ms ease-in-out, border-color 220ms ease-in-out; }
+
 @media screen and (min-width: 360px) {
   .heading--one {
     font-size: 3rem;
@@ -80,7 +100,10 @@ body {
   .logo--primary {
     margin: 0 auto 2rem auto;
     width: 250px;
-    display: block; } }
+    display: block; }
+
+  .call--to--action {
+    width: calc(80% - 2rem); } }
 @media screen and (min-width: 1024px) {
   .header--primary {
     padding: 0; }
@@ -108,7 +131,10 @@ body {
   .subpage--header--size {
     height: 70vh; }
     .subpage--header--size .logo--primary {
-      width: 250px; } }
+      width: 250px; }
+
+  .call--to--action {
+    width: calc(60% - 2rem); } }
 /* General Nav Elements */
 .nav--primary {
   position: relative; }
