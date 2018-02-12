@@ -359,6 +359,9 @@ body {
 .text--white {
   color: #FFF; }
 
+.green--text {
+  color: #C9D300; }
+
 .long--text {
   width: 100%;
   max-width: 100%; }
