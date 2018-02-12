@@ -19,9 +19,9 @@
 .sub--heading {
   text-align: center;
   color: #FFF;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 .logo--primary {
@@ -66,7 +66,6 @@
   }
   .logo--primary {
     margin: 0 auto 2rem auto;
-    width: 250px;
     display: block;
   }
   .call--to--action {
@@ -103,5 +102,10 @@
   }
   .call--to--action {
     width: calc(60% - 2rem);
+  }
+
+.sub--heading {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
   }
 }
