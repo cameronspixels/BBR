@@ -21,8 +21,8 @@ function myMap() {
 	/* Thanks to StackOverflow contribution from David Anderton, providing this window resizing fix to the Maps API's loading issues with responsive designs.
 	https://stackoverflow.com/questions/31988492/google-maps-dont-work-sometimes-or-almost-always-not-working */
 	google.maps.event.addDomListener(window, 'resize', function() {
-    var center = map.getCenter();
-    map.setCenter(center);
+    	var center = map.getCenter();
+    	map.setCenter(center);
 	});
 	google.maps.event.trigger(map, "resize");
 }

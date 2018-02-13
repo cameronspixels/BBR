@@ -20,7 +20,7 @@
   text-align: center;
   color: #FFF;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5rem;
 }
 
@@ -107,5 +107,19 @@
 .sub--heading {
   font-size: 1.3rem;
   line-height: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .logo--primary {
+    width: 500px;
+  }
+  .sub--heading {
+    margin: 4rem 0 1rem 0;
+    font-size: 1.6rem;
+  }
+  .call--to--action {
+    margin: 3rem auto 1rem auto;
+    font-size: 1.3rem;
   }
 }
