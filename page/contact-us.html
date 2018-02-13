@@ -69,15 +69,15 @@
           <p class="sub--header">Fill out this form and we'll get back to you as soon as possible.</p>
           <form class="contact--form">
             <label class="contact--label">Name</label>
-            <input class="contact--input" type="text" name="name">
+            <input class="contact--input" type="text" name="name" required>
             <div class="contact--flex">
               <div class="contact--order--1">
                 <label class="contact--label">Email</label>
-                <input class="contact--input" type="text" name="email">
+                <input class="contact--input" type="email" name="email">
               </div>
               <div class="contact--order--2">
                 <label class="contact--label">Telephone</label>
-                <input class="contact--input" type="text" name="telephone">
+                <input class="contact--input" type="tel" name="telephone">
               </div>
             </div>
             <div class="contact--flex">
@@ -90,7 +90,7 @@
               </div>
               <div class="contact--order--1">
                 <label class="contact--label">Description</label>
-                <textarea class="contact--textbox"></textarea>
+                <textarea class="contact--textbox" required></textarea>
               </div>
             </div>
             <label class="contact--label">Contact Preference</label>

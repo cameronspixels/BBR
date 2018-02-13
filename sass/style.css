@@ -412,6 +412,9 @@ body {
   font-size: 2rem;
   color: #C9D300; }
 
+.shorter--heading {
+  padding: 0 20px; }
+
 .geo--map, .contact--map {
   height: 300px;
   width: 100%;
@@ -785,11 +788,17 @@ body {
   .insurance--progress {
     margin-top: 1rem; } }
 /* Desktop viewport, screens 1024px and above */
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1024px) {
   .heading--two {
-    padding: 3rem 0 0 0;
+    padding: 5rem 0 0 0;
     font-size: 3rem;
     text-align: left; }
+
+  .shorter--heading {
+    padding: 0; }
+
+  .primary--section {
+    padding: 0 20px 5rem 20px; }
 
   .primary--section--text {
     margin: 2rem 0 0 0; }
@@ -831,7 +840,7 @@ body {
     max-width: 70%; }
 
   .smaller--section {
-    max-width: 750px; }
+    max-width: 700px; }
 
   .center--header {
     text-align: center;
@@ -896,6 +905,9 @@ body {
 @media screen and (min-width: 1350px) {
   .primary--section {
     max-width: 1000px; }
+
+  .smaller--section {
+    max-width: 700px; }
 
   .geo--map {
     height: 400px; } }
