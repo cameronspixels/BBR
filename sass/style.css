@@ -907,9 +907,31 @@ body {
     max-width: 1000px; }
 
   .smaller--section {
-    max-width: 700px; }
+    max-width: 850px; }
+
+  .primary--section--flex {
+    max-width: 60%; }
 
   .geo--map {
-    height: 400px; } }
+    height: 400px; }
+
+  .heading--one {
+    font-size: 5rem; }
+
+  .heading--two {
+    font-size: 4rem; }
+
+  .primary--section--text {
+    margin: 3rem 0 0 0;
+    font-size: 1.3rem; }
+
+  .section--text--short {
+    margin: 3rem auto 0 auto; }
+
+  .about--left {
+    margin: 4rem auto 1rem 0; }
+
+  .about--right {
+    margin: 4rem 0 1rem auto; } }
 
 /*# sourceMappingURL=style.css.map */
