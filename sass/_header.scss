@@ -1,3 +1,4 @@
+/*
 .header--primary {
   height: 85vh; padding: 0 20px;
   position: relative;
@@ -5,6 +6,39 @@
   background-size: cover;
   background-position: bottom center;
   background-attachment: fixed;
+}
+*/
+
+.header--primary:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(120, 120, 120, 0), rgba(120, 120, 120, 0.5)), url(../img/background/blue--back.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  animation: header--intro 1800ms 120ms cubic-bezier(0, .5, 0, 1) forwards;
+}
+
+@keyframes header--intro {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header--primary {
+  height: 85vh; padding: 0 20px;
+  position: relative;
 }
 
 .heading--one {
