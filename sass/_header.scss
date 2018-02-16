@@ -1,12 +1,30 @@
 .header--primary {
-  height: 85vh; padding: 0 20px;
+  height: 90vh; padding: 0 20px;
   position: relative;
-  background-image: url(../img/background/blue--back.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  background-attachment: fixed;
 }
-
+.header--primary:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0, 82, 125, .8), rgba(0, 82, 125, .4)), url(../img/background/bg--header.JPG) center no-repeat fixed;
+  background-size: cover;
+  animation: header--intro 1200ms cubic-bezier(.64, .64, 0, .60) forwards;
+}
+@keyframes header--intro {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .heading--one {
   margin: 0;
   font-size: 2rem; font-weight: 800;
@@ -14,8 +32,6 @@
   text-align: center;
   color: #C9D300;
 }
-
-
 .sub--heading {
   text-align: center;
   color: #FFF;
@@ -23,20 +39,21 @@
   font-weight: 400;
   line-height: 1.5rem;
 }
-
 .logo--primary {
   margin: 0 auto 2rem auto;
   width: 300px;
   display: block;
 }
-
 .header--primary--content {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -60%);
   position: absolute;
+  &>* {
+    opacity: 0;
+    animation: header--intro 1200ms 330ms cubic-bezier(.64, .64, 0, .60) forwards;
+  }
 }
-
 .call--to--action {
   margin: 2rem auto 0 auto; padding: 0.5rem 1rem;
   display: block;
@@ -48,8 +65,8 @@
   color: #FFF;
   font-weight: 600;
   transition: color 220ms ease-in-out, border-color 220ms ease-in-out;
+  animation-delay: 660ms;
 }
-
 .white--button {
   border-color: #FFF;
   &:hover {
@@ -103,10 +120,9 @@
   .call--to--action {
     width: calc(60% - 2rem);
   }
-
-.sub--heading {
-  font-size: 1.3rem;
-  line-height: 1.7rem;
+  .sub--heading {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
   }
 }
 

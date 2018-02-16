@@ -1,9 +1,7 @@
 /* General Nav Elements */
-
 .nav--primary {
   position: relative;
 }
-
 .nav--primary--list {
   height: 100vh; width: 300px;
   top: 0; right: 0; z-index: 900;
@@ -15,7 +13,6 @@
   transform: translateX(320px);
   transition: transform 330ms ease-out;
 }
-
 .nav--primary--list--content {
   margin: 0; padding: 0;
   width: 100%;
@@ -23,11 +20,9 @@
   top: 40%;
   transform: translateY(-40%);
 }
-
 .nav--primary--list--container {
   display: block;
 }
-
 .nav--primary--list--link {
   padding: 10px 20px;
   display: block;
@@ -37,9 +32,7 @@
     color: #C9D300;
   }
 }
-
 /* Hamburger Menu on Mobile */
-
 .nav--hamburger {
   padding: 20px 0;
   width: 100%;
@@ -54,7 +47,6 @@
     }
   }
 }
-
 .nav--hamburger--block {
   height: 4px; width: 36px;
   display: block;
@@ -64,19 +56,15 @@
   border-radius: 6px;
   transition: background-color 220ms 220ms ease-in-out;
 }
-
 .nav--hamburger--block-1 {
   top: 6px;
 }
-
 .nav--hamburger--block-2 {
   top: 16px;
 }
-
 .nav--hamburger--block-3 {
   top: 26px;
 }
-
 .handle--closed {
   display: none;
   .nav--hamburger--block {
@@ -84,9 +72,7 @@
     transition: background-color 220ms ease-in-out;
   }
 }
-
 /* Targets and Shows the <ul> */
-
 #openMenu {
   &:target {
     .nav--primary--list {
@@ -103,31 +89,24 @@
         transition: background-color 220ms 220ms ease-in-out;
       }
     }
-    .header--primary {
-      filter: brightness(25%);
-    }
   }
 }
-
 .nav--active--link {
   color: #C9D300;
 }
-
+/* Phone number in mobile menu */
 .nav--contact {
   margin-top: 1rem;
   padding: 10px 20px;
   position: relative;
 }
-
 .nav--contact--icon {
   height: 30px;
   transform: rotate(90deg);
 }
-
 .nav--contact--icon--fill {
   fill: #FFF;
 }
-
 .nav--contact--number {
   margin: 0 0 0 1rem;
   color: #FFF;
@@ -138,9 +117,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+  /* Remove hamburger on desktop */
   .handle--open {
     display: none;
   }
+  /* Show <ul> on desktop */
   .nav--primary--list {
     transform: translateX(0);
     height: auto;
@@ -177,22 +158,20 @@
   .nav--active--link {
     color: #C9D300;
   }
+  /* Phone number in top right */
   .nav--contact {
     padding: 0;
     position: absolute;
     right: 30px;
     top: 0;
   }
-
   .nav--contact--icon {
     height: 30px;
     transform: rotate(90deg);
   }
-  
   .nav--contact--icon--fill {
     fill: #FFF;
   }
-  
   .nav--contact--number {
     margin: 0 0 0 1rem;;
     color: #FFF;
