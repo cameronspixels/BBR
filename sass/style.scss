@@ -51,15 +51,15 @@ body {
 @import 'nav';
 
 .bg--white--1 {
-  background-image: url(../img/background/white--valet.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .7)), url(../img/background/bg--valet.jpg);
 }
 
 .bg--white--2 {
-  background-image: url(../img/background/white--paint.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .6)), url(../img/background/bg--paint.jpg);
 }
 
 .bg--white--3 {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .6)), url(../img/background/bg--paintgun.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .6)), url(../img/background/bg--paintgun--2.jpg);
 }
 
 .bg--blue--1 {
@@ -67,7 +67,7 @@ body {
 }
 
 .bg--blue--2 {
-  background-image: url(../img/background/blue--paintgun--2.jpg);
+  background: linear-gradient(to bottom, rgba(0, 82, 125, .8), rgba(0, 82, 125, .6)), url(../img/background/bg--paintgun--2.jpg);
 }
 
 .bg--grey {
