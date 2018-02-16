@@ -17,21 +17,6 @@
   animation: header--intro 1200ms cubic-bezier(.64, .64, 0, .60) forwards;
 }
 
-/*
-.header--primary::after {
-  background: #FFF;
-  transform: rotateZ(-2deg);
-    transform-origin: 0 0;
-    position: absolute;
-    height: 80px;
-    z-index: 1;
-    right: -5%;
-    left: -5%;
-    top: 98%;
-    content: "";
-}
-*/
-
 @keyframes header--intro {
   0% {
     opacity: 0;
