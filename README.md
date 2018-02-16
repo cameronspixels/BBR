@@ -5,7 +5,7 @@
 - [ ] Add example news article page.
 - [ ] Finish metadata.
 - [ ] Background image optimisation.
-- [ ] I _promise_ that I'll clean up the CSS, it's a mess.
+- [x] I _promise_ that I'll clean up the CSS, it's a mess.
 - [ ] General accessibility checks.
 
 ### To-Do List __for the live site__ (I don't need to do these for the project):
