@@ -268,6 +268,25 @@ body {
   }
 }
 
+ol {
+  counter-reset: item;
+  margin-left: -1rem;
+}
+
+.ordered--item {
+  display: block;
+  text-indent: -1rem;
+  &::before {
+    font-weight: 700;
+    color: #C9D300;
+    width: 1rem;
+    content: counter(item) ". ";
+    counter-increment: item;
+    display: inline--block;
+    list-style-type: none;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .content--embed {
     min-height: 400px;
