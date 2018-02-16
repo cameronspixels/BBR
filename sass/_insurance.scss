@@ -3,7 +3,6 @@
   padding: 2rem 5% 1rem 5%;
   background: linear-gradient(to bottom, rgba(0, 82, 125, .8), rgba(0, 82, 125, .4)), url(../img/background/bg--header.jpg) center no-repeat fixed;  background-size: cover;
 }
-
 .insurance--header {
   margin: 0;
   padding: 1.8rem 2% 0 2%;
@@ -12,7 +11,6 @@
   color: #C9D300;
   text-align: center;
 }
-
 .insurance--sub--header {
   margin: 0 auto;
   padding: 1.2rem 2% 0 2%;
@@ -23,12 +21,6 @@
   color: #FFF;
   text-align: center;
 }
-
-.insurance--large {
-  padding: 0.4rem 0 0 0;
-  line-height: 1.4rem;
-}
-
 .insurance--help {
   margin: 0 auto;
   padding: 1.3rem 5% 0 5%;
@@ -38,12 +30,14 @@
   color: #FFF;
   text-align: center;
 }
-
+.insurance--large {
+  padding: 0.4rem 0 0 0;
+  line-height: 1.4rem;
+}
 .insurance--intro {
   font-weight: 400;
 }
-
-.insurance--selection, {
+.insurance--selection {
   margin: 2rem auto;
   display: block;
   max-width: 60%;
@@ -59,12 +53,10 @@
     color: #C9D300;
   }
 }
-
 .links--out {
   margin-top: 1rem;
   display: block;
 }
-
 .insurance--back {
   margin: 0 auto;
   display: block;
@@ -77,7 +69,6 @@
     color: #C9D300;
   } 
 }
-
 .insurance--progress {
   margin: 0;
   display: flex;
@@ -86,17 +77,14 @@
   align-items: center;
   justify-content: center;
 }
-
 .circle--inner {
   stroke: #FFF;
   stroke-width: 3px;
   fill: none;
 }
-
 .circle--inner--progressed {
   fill: #FFF;
 }
-
 .insurance--return {
   padding-bottom: 1rem;
   padding-top: 1.3rem;

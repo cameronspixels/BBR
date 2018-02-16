@@ -244,12 +244,11 @@ body {
   #openMenu:target .handle--closed .nav--hamburger--block {
     background-color: #C9D300;
     transition: background-color 220ms 220ms ease-in-out; }
-#openMenu:target .header--primary {
-  filter: brightness(25%); }
 
 .nav--active--link {
   color: #C9D300; }
 
+/* Phone number in mobile menu */
 .nav--contact {
   margin-top: 1rem;
   padding: 10px 20px;
@@ -271,9 +270,11 @@ body {
   transform: translateY(-50%); }
 
 @media screen and (min-width: 1024px) {
+  /* Remove hamburger on desktop */
   .handle--open {
     display: none; }
 
+  /* Show <ul> on desktop */
   .nav--primary--list {
     transform: translateX(0);
     height: auto;
@@ -308,6 +309,7 @@ body {
   .nav--active--link {
     color: #C9D300; }
 
+  /* Phone number in top right */
   .nav--contact {
     padding: 0;
     position: absolute;
@@ -697,10 +699,6 @@ ol {
   color: #FFF;
   text-align: center; }
 
-.insurance--large {
-  padding: 0.4rem 0 0 0;
-  line-height: 1.4rem; }
-
 .insurance--help {
   margin: 0 auto;
   padding: 1.3rem 5% 0 5%;
@@ -709,6 +707,10 @@ ol {
   font-weight: 300;
   color: #FFF;
   text-align: center; }
+
+.insurance--large {
+  padding: 0.4rem 0 0 0;
+  line-height: 1.4rem; }
 
 .insurance--intro {
   font-weight: 400; }

@@ -1,18 +1,15 @@
 @mixin form--fonts {
   font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
 }
-
 .contact--heading {
   color: #00527D;
 }
-
 .contact--label {
   margin-top: 2rem;
   display: block;
   font-size: 1.1rem; font-weight: 600;
   color: #42413C;
 }
-
 .contact--input, .contact--textbox {
   margin-top: 1rem;
   padding: 0.5rem 0.8rem;
@@ -22,40 +19,32 @@
   border: 3px solid #42413C; border-radius: 2px;
   outline: none;
 }
-
 .contact--input {
   max-width: 250px;
 }
-
 .contact--textbox {
   min-height: 150px;
   max-width: 80%;
   line-height: 1.4rem;
 }
-
 .contact--preferences {
   display: block;
 }
-
 .contact--file {
   margin-top: 1rem;
   width: 100%;
   color: #42413C; font-size: 1rem; @include form--fonts;
 }
-
 .contact--preference--choice {
   display: block;
   padding-top: 1rem;
 }
-
 .contact--checkbox {
   margin-right: 0.5rem;
 }
-
 .preference--label {
   color: #42413C;
 }
-
 .contact--button {
   margin-top: 2rem;
   padding: 0.6rem 4rem;

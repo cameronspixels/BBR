@@ -2,7 +2,6 @@
   height: 90vh; padding: 0 20px;
   position: relative;
 }
-
 .header--primary:before {
   content: "";
   position: absolute;
@@ -16,7 +15,6 @@
   background-size: cover;
   animation: header--intro 1200ms cubic-bezier(.64, .64, 0, .60) forwards;
 }
-
 @keyframes header--intro {
   0% {
     opacity: 0;
@@ -27,7 +25,6 @@
     transform: none;
   }
 }
-
 .heading--one {
   margin: 0;
   font-size: 2rem; font-weight: 800;
@@ -35,8 +32,6 @@
   text-align: center;
   color: #C9D300;
 }
-
-
 .sub--heading {
   text-align: center;
   color: #FFF;
@@ -44,13 +39,11 @@
   font-weight: 400;
   line-height: 1.5rem;
 }
-
 .logo--primary {
   margin: 0 auto 2rem auto;
   width: 300px;
   display: block;
 }
-
 .header--primary--content {
   top: 60%;
   left: 50%;
@@ -61,8 +54,6 @@
     animation: header--intro 1200ms 330ms cubic-bezier(.64, .64, 0, .60) forwards;
   }
 }
-
-
 .call--to--action {
   margin: 2rem auto 0 auto; padding: 0.5rem 1rem;
   display: block;
@@ -76,7 +67,6 @@
   transition: color 220ms ease-in-out, border-color 220ms ease-in-out;
   animation-delay: 660ms;
 }
-
 .white--button {
   border-color: #FFF;
   &:hover {
@@ -130,10 +120,9 @@
   .call--to--action {
     width: calc(60% - 2rem);
   }
-
-.sub--heading {
-  font-size: 1.3rem;
-  line-height: 1.7rem;
+  .sub--heading {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
   }
 }
 
