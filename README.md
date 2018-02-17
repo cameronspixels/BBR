@@ -4,7 +4,7 @@
 - [ ] Add partner logos.
 - [x] ~~Add example news article page~~.
 - [x] ~~Finish metadata~~.
-- [ ] Background image optimisation.
+- [x] ~~Background image optimisation~~.
 - [x] ~~I _promise_ that I'll clean up the CSS, it's a mess~~.
 - [ ] General accessibility checks.
 
