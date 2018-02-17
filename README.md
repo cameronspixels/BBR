@@ -2,8 +2,8 @@
 
 ### To-Do List __for my project__:
 - [ ] Add partner logos.
-- [ ] Add example news article page.
-- [ ] Finish metadata.
+- [x] Add example news article page.
+- [x] Finish metadata.
 - [ ] Background image optimisation.
 - [x] I _promise_ that I'll clean up the CSS, it's a mess.
 - [ ] General accessibility checks.
