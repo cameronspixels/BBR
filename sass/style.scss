@@ -202,6 +202,20 @@ The same few background images were  re-used in an attempt to reduce loading tim
   color: #42413C;
 }
 
+/* Images */
+
+.small--logo {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2rem;
+  width: calc(80% - 4rem);
+  max-width: 250px;
+}
+
+.center--images {
+  text-align: center;
+}
+
 /* Lists */
 
 .center--list {
@@ -213,11 +227,6 @@ The same few background images were  re-used in an attempt to reduce loading tim
 .center--list--item {
   margin: 0 0 0 1rem;
   padding: 0.2rem 0 0 1rem;
-}
-
-.section--image {
-  margin-top: 2rem;
-  width: 100%;
 }
 
 /* Testimonials */
@@ -247,6 +256,8 @@ The same few background images were  re-used in an attempt to reduce loading tim
   min-height: 300px;
   border: none;
 }
+
+/* News */
 
 .news--seperator {
   margin-top: 3rem;
@@ -307,6 +318,10 @@ ol {
 @media screen and (min-width: 800px) {
   .content--embed {
     min-height: 400px;
+  }
+  .small--logo {
+    padding: 4rem 2rem;
+    vertical-align: middle;
   }
 }
 
