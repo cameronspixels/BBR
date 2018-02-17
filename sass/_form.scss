@@ -18,6 +18,10 @@
   background-color: rgba(0,0,0,0); color: #42413C;
   border: 3px solid #42413C; border-radius: 2px;
   outline: none;
+  &:focus {
+    outline: 3px solid #42413C;
+    background-color: #C9D300;
+  }
 }
 .contact--input {
   max-width: 250px;
@@ -34,6 +38,10 @@
   margin-top: 1rem;
   width: 100%;
   color: #42413C; font-size: 1rem; @include form--fonts;
+  &:focus {
+    background: #C9D300;
+    outline: 2px solid #42413C
+  }
 }
 .contact--preference--choice {
   display: block;
@@ -41,6 +49,9 @@
 }
 .contact--checkbox {
   margin-right: 0.5rem;
+  &:focus {
+    outline: 4px solid #42413C
+  }
 }
 .preference--label {
   color: #42413C;
@@ -55,7 +66,7 @@
   border: none;
   border-radius: 30px;
   transition: all 220ms ease-in-out;
-  &:hover {
+  &:hover, &:focus {
     background-color: #00527D;
     transform: scale(1.1);
     transition: all 220ms ease-in-out;
@@ -66,6 +77,10 @@
     transform: translateY(.1rem);
     transition: none;
   }
+}
+
+.contact--help {
+  margin: 1rem 0 0 0;
 }
 
 @media screen and (min-width: 1024px) {

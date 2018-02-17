@@ -25,7 +25,6 @@
   <body>
     <header id="openMenu" class="header--primary subpage--header--size">
       <nav class="nav--primary">
-        <!-- Mobile Hamburger -->
         <a href="#openMenu" class="nav--hamburger handle--open" title="Open mobile menu">
           <span class="nav--hamburger--block nav--hamburger--block-1"></span>
           <span class="nav--hamburger--block nav--hamburger--block-2"></span>
@@ -67,32 +66,38 @@
           <p class="sub--header">Fill out this form and we'll get back to you as soon as possible.</p>
           <form class="contact--form">
             <label class="contact--label">Name</label>
+            <p class="contact--help">What's your name?</p>
             <input class="contact--input" type="text" name="name" required>
             <div class="contact--flex">
               <div class="contact--order--1">
                 <label class="contact--label">Email</label>
+                <p class="contact--help">What's your email address?</p>
                 <input class="contact--input" type="email" name="email">
               </div>
               <div class="contact--order--2">
                 <label class="contact--label">Telephone</label>
+                <p class="contact--help">What's your phone number?</p>
                 <input class="contact--input" type="tel" name="telephone">
               </div>
             </div>
             <div class="contact--flex">
-              <div class="contact--order--2">
-                <label class="contact--label">Image Upload</label>
-                <input class="contact--file" type="file" name="file-upload">
-                <input class="contact--file" type="file" name="file-upload">
-                <input class="contact--file" type="file" name="file-upload">
-                <input class="contact--file" type="file" name="file-upload">
-              </div>
               <div class="contact--order--1">
                 <label class="contact--label">Description</label>
+                <p class="contact--help">What can you tell us about the work?</p>
                 <textarea class="contact--textbox" required></textarea>
+              </div>
+              <div class="contact--order--2">
+                <label class="contact--label">Image Upload</label>
+                <p class="contact--help">Images help us estimate a quote!</p>
+                <input class="contact--file" type="file" name="file-upload">
+                <input class="contact--file" type="file" name="file-upload">
+                <input class="contact--file" type="file" name="file-upload">
+                <input class="contact--file" type="file" name="file-upload">
               </div>
             </div>
             <label class="contact--label">Contact Preference</label>
             <div class="contact--preferences">
+              <p class="contact--help">How would you prefer we get back to you?</p>
               <div class="contact--preference--choice">
                 <input class="contact--checkbox" type="checkbox" name="pref-email" value="Email">
                 <label class="preference--label">Email</label>
@@ -132,11 +137,11 @@
       <section class="primary--section--background bg--white--1">
         <div class="primary--section smaller--section">
           <h2 class="heading--two blue--text center--header">We Are Open</h2>
-          <p class="primary--section--text"><strong class="bolder--text">Pop in and see us anytime from:</strong>
+          <p class="primary--section--text center--text"><strong class="bolder--text">Pop in and see us anytime from:</strong>
             <br>Monday – Friday
             <br>08:00 – 17:00
           </p>
-          <p class="primary--section--text">See us on a weekend <strong class="bolder--text">by prior appointment only</strong> – get in touch today to arrage.</p>
+          <p class="primary--section--text center--text">See us on a weekend <strong class="bolder--text">by prior appointment only</strong> – get in touch today to arrage.</p>
         </div>
       </section>
     </main>

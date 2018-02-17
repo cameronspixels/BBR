@@ -573,6 +573,9 @@ ol {
   border: 3px solid #42413C;
   border-radius: 2px;
   outline: none; }
+  .contact--input:focus, .contact--textbox:focus {
+    outline: 3px solid #42413C;
+    background-color: #C9D300; }
 
 .contact--input {
   max-width: 250px; }
@@ -591,6 +594,9 @@ ol {
   color: #42413C;
   font-size: 1rem;
   font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif; }
+  .contact--file:focus {
+    background: #C9D300;
+    outline: 2px solid #42413C; }
 
 .contact--preference--choice {
   display: block;
@@ -598,6 +604,8 @@ ol {
 
 .contact--checkbox {
   margin-right: 0.5rem; }
+  .contact--checkbox:focus {
+    outline: 4px solid #42413C; }
 
 .preference--label {
   color: #42413C; }
@@ -613,7 +621,7 @@ ol {
   border: none;
   border-radius: 30px;
   transition: all 220ms ease-in-out; }
-  .contact--button:hover {
+  .contact--button:hover, .contact--button:focus {
     background-color: #00527D;
     transform: scale(1.1);
     transition: all 220ms ease-in-out;
@@ -622,6 +630,9 @@ ol {
     background-color: #00527D;
     transform: translateY(0.1rem);
     transition: none; }
+
+.contact--help {
+  margin: 1rem 0 0 0; }
 
 @media screen and (min-width: 1024px) {
   .contact--textbox {
@@ -743,9 +754,12 @@ ol {
   color: #FFF;
   text-align: center;
   line-height: 1.4rem;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 220ms ease-in-out; }
   .insurance--selection:hover {
-    color: #C9D300; }
+    color: #C9D300;
+    transform: scale(1.1);
+    transition: all 220ms ease-in-out; }
 
 .links--out {
   margin-top: 1rem;
@@ -758,9 +772,11 @@ ol {
   color: #FFF;
   font-weight: 600;
   text-align: left;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 220ms ease-in-out; }
   .insurance--back:hover {
-    color: #C9D300; }
+    color: #C9D300;
+    transition: all 220ms ease-in-out; }
 
 .insurance--progress {
   margin: 0;
@@ -787,7 +803,11 @@ ol {
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  z-index: 999; }
+  z-index: 999;
+  transition: all 220ms ease-in-out; }
+  .insurance--return:hover {
+    color: #C9D300;
+    transition: all 220ms ease-in-out; }
 
 @media screen and (min-width: 1024px) {
   .insurance--main {

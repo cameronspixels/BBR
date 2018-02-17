@@ -49,8 +49,11 @@
   text-align: center;
   line-height: 1.4rem;
   text-decoration: none;
+  transition: all 220ms ease-in-out;
   &:hover {
     color: #C9D300;
+    transform: scale(1.1);
+    transition: all 220ms ease-in-out;
   }
 }
 .links--out {
@@ -65,8 +68,10 @@
   font-weight: 600;
   text-align: left;
   text-decoration: none; 
+  transition: all 220ms ease-in-out;
   &:hover {
     color: #C9D300;
+    transition: all 220ms ease-in-out;
   } 
 }
 .insurance--progress {
@@ -95,6 +100,11 @@
   text-align: center;
   text-decoration: none;
   z-index: 999;
+  transition: all 220ms ease-in-out;
+  &:hover {
+    color: #C9D300;
+    transition: all 220ms ease-in-out;
+  }
 }
 
 @media screen and (min-width: 1024px) {
