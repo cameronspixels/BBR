@@ -49,30 +49,28 @@
   left: 50%;
   transform: translate(-50%, -60%);
   position: absolute;
-  &>* {
-    opacity: 0;
-    animation: header--intro 1200ms 330ms cubic-bezier(.64, .64, 0, .60) forwards;
-  }
 }
 .call--to--action {
   margin: 2rem auto 0 auto; padding: 0.5rem 1rem;
   display: block;
-  border: 4px solid;
-  width: calc(100% - 2rem);
+  border: 4px solid #FFF;;
+  max-width: calc(100% - 2rem);
   text-align: center;
   border-radius: 30px;
   text-decoration: none;
-  color: #FFF;
+  color: #FFF; 
   font-weight: 600;
-  transition: color 220ms ease-in-out, border-color 220ms ease-in-out;
-  animation-delay: 660ms;
-}
-.white--button {
-  border-color: #FFF;
+  transition: all 220ms ease-in-out;
+  transform: none;
   &:hover {
-    border-color: #C9D300;
-    color: #C9D300;
-    transition: color 220ms ease-in-out, border-color 220ms ease-in-out;
+    background-color: #C9D300; border-color: #C9D300; color: #42413C;
+    transform: scale(1.1);
+    transition: all 220ms ease-in-out;
+  }
+  &:active {
+    transform: translateY(.1rem);
+    background-color: #C9D300; border-color: #C9D300; color: #42413C;
+    transition: none;
   }
 }
 

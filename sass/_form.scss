@@ -54,9 +54,17 @@
   color: #FFF;
   border: none;
   border-radius: 30px;
+  transition: all 220ms ease-in-out;
   &:hover {
     background-color: #00527D;
+    transform: scale(1.1);
+    transition: all 220ms ease-in-out;
     cursor: pointer;
+  }
+  &:active {
+    background-color: #00527D;
+    transform: translateY(.1rem);
+    transition: none;
   }
 }
 

@@ -26,5 +26,3 @@ function myMap() {
 	});
 	google.maps.event.trigger(map, "resize");
 }
-
-
