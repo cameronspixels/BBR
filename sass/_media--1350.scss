@@ -1,0 +1,64 @@
+
+
+@media screen and (min-width: 1350px) {
+
+  /* From Style.scss */
+
+  .primary--section {
+    max-width: 1000px;
+  }
+  .geo--map {
+    height: 400px;
+  }
+  .smaller--section {
+    max-width: 850px;
+  }
+  .primary--section--flex {
+    max-width: 60%; 
+  }
+  .geo--map {
+    height: 400px;
+  }
+  .heading--one {
+    font-size: 5rem;
+  }
+  .heading--two {
+    font-size: 4rem;
+  }
+  .primary--section--text {
+    margin: 3rem 0 0 0;
+    font-size: 1.3rem;
+  }
+  .section--text--short {
+    margin: 3rem auto 0 auto;
+  }
+  .about--left {
+    margin: 4rem auto 1rem 0;
+  }
+  .about--right {
+    margin: 4rem 0 1rem auto;
+  }
+
+  /* From Header.scss */
+
+  .logo--primary {
+    width: 500px;
+  }
+  .sub--heading {
+    margin: 4rem 0 1rem 0;
+    font-size: 1.6rem;
+  }
+  .call--to--action {
+    margin: 3rem auto 1rem auto;
+    font-size: 1.3rem;
+  }
+
+  /* From Footer.scss */
+
+  .footer--primary {
+    padding: 2rem 20%;
+  }
+  .footer--right, .footer--left {
+    width: 30%;
+  }
+}

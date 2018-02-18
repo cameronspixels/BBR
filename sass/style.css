@@ -105,61 +105,6 @@ body {
     color: #42413C;
     transition: none; }
 
-@media screen and (min-width: 360px) {
-  .heading--one {
-    font-size: 3rem;
-    line-height: 3.8rem; }
-
-  .logo--primary {
-    margin: 0 auto 2rem auto;
-    display: block; }
-
-  .call--to--action {
-    width: calc(80% - 2rem); } }
-@media screen and (min-width: 1024px) {
-  .header--primary {
-    padding: 0; }
-
-  .header--content {
-    max-width: 800px; }
-
-  .logo--primary {
-    width: 400px; }
-
-  .heading--one {
-    font-size: 3.5rem; }
-
-  .logo--subpage {
-    margin: 0 2rem 0 auto; }
-
-  .heading--subpage {
-    margin: 0 auto 0 2rem; }
-
-  .header--subpage {
-    width: 100%;
-    display: flex;
-    align-items: center; }
-
-  .subpage--header--size {
-    height: 70vh; }
-
-  .call--to--action {
-    width: calc(60% - 2rem); }
-
-  .sub--heading {
-    font-size: 1.3rem;
-    line-height: 1.7rem; } }
-@media screen and (min-width: 1350px) {
-  .logo--primary {
-    width: 500px; }
-
-  .sub--heading {
-    margin: 4rem 0 1rem 0;
-    font-size: 1.6rem; }
-
-  .call--to--action {
-    margin: 3rem auto 1rem auto;
-    font-size: 1.3rem; } }
 /* General Nav Elements */
 .nav--primary {
   position: relative; }
@@ -271,67 +216,6 @@ body {
   top: 50%;
   transform: translateY(-50%); }
 
-@media screen and (min-width: 1024px) {
-  /* Remove hamburger on desktop */
-  .handle--open {
-    display: none; }
-
-  /* Show <ul> on desktop */
-  .nav--primary--list {
-    transform: translateX(0);
-    height: auto;
-    width: 100%;
-    overflow: visible;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 1rem;
-    position: relative; }
-
-  .nav--primary--list--container {
-    display: inline-block;
-    margin: 35px 0; }
-    .nav--primary--list--container:not(:last-child) {
-      border-right: solid 1px #FFF; }
-
-  .nav--primary--list--link {
-    padding: 5px 25px;
-    display: block;
-    text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #FFF; }
-    .nav--primary--list--link:hover {
-      color: #C9D300; }
-
-  .nav--primary--list--content {
-    width: calc(100% - 60px);
-    padding-left: 30px;
-    position: relative;
-    transform: translateY(0); }
-
-  .nav--active--link {
-    color: #C9D300; }
-
-  /* Phone number in top right */
-  .nav--contact {
-    padding: 0;
-    position: absolute;
-    right: 30px;
-    top: 0; }
-
-  .nav--contact--icon {
-    height: 30px;
-    transform: rotate(90deg); }
-
-  .nav--contact--icon--fill {
-    fill: #FFF; }
-
-  .nav--contact--number {
-    margin: 0 0 0 1rem;
-    color: #FFF;
-    display: inline-block;
-    position: relative;
-    font-size: 1.1rem;
-    letter-spacing: 1px; } }
 /* Background Images
 The same few background images were  re-used in an attempt to reduce loading times. */
 .bg--white--1 {
@@ -642,28 +526,6 @@ ol {
 .contact--help {
   margin: 1rem 0 0 0; }
 
-@media screen and (min-width: 1024px) {
-  .contact--textbox {
-    max-width: 600px; }
-
-  .contact--file {
-    margin-top: 1.5rem;
-    width: 100%; }
-
-  .contact--label, .contact--input {
-    width: 80%;
-    max-width: 300px; }
-
-  .contact--flex {
-    display: flex; }
-
-  .contact--order--1 {
-    width: 50%;
-    order: 1; }
-
-  .contact--order--2 {
-    width: 50%;
-    order: 2; } }
 .footer--primary {
   padding: 2rem 10%;
   background-color: #42413C;
@@ -683,34 +545,6 @@ ol {
 .footer--credit {
   font-size: 0.8rem; }
 
-@media screen and (min-width: 1024px) {
-  .footer--primary {
-    display: flex;
-    flex-wrap: wrap; }
-
-  .footer--right {
-    margin: 0 auto;
-    width: 30%;
-    order: 2; }
-
-  .footer--left {
-    margin: 0 auto;
-    width: 30%;
-    order: 1; }
-
-  .footer--address, .footer--info, .footer--email, .footer--text--gap, .footer--telephone {
-    width: 100%; }
-
-  .footer--credit {
-    width: 100%;
-    order: 3;
-    text-align: center; } }
-@media screen and (min-width: 1350px) {
-  .footer--primary {
-    padding: 2rem 20%; }
-
-  .footer--right, .footer--left {
-    width: 30%; } }
 .insurance--main {
   min-height: calc(100vh - 3rem);
   padding: 2rem 5% 1rem 5%;
@@ -817,58 +651,29 @@ ol {
     color: #C9D300;
     transition: all 220ms ease-in-out; }
 
-@media screen and (min-width: 1024px) {
-  .insurance--main {
-    padding: 0 20px;
-    min-height: 100vh; }
+/* Import media queries, CSS compliler cleaner than splitting the media queries up between sass files. */
+@media screen and (min-width: 360px) {
+  /* From Header.scss */
+  .heading--one {
+    font-size: 3rem;
+    line-height: 3.8rem; }
 
-  .insurance--header {
-    padding: 5rem 0 0 0;
-    font-size: 2.5rem; }
+  .logo--primary {
+    margin: 0 auto 2rem auto;
+    display: block; }
 
-  .insurance--sub--header {
-    padding: 3rem 0 0 0;
-    font-size: 1.8rem;
-    line-height: 2.4rem; }
-
-  .insurance--selection--container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80%; }
-
-  .insurance--help {
-    padding-top: 2rem; }
-
-  .insurance--selection {
-    margin: 2rem auto 1rem auto;
-    display: inline-block;
-    width: 33%; }
-
-  .links--out {
-    position: absolute;
-    width: 33%;
-    bottom: 1rem;
-    left: 1rem; }
-
-  .insurance--back {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    width: 100%; }
-    .insurance--back:first-child {
-      padding-top: 2rem; }
-
-  .insurance--progress {
-    margin-top: 1rem; } }
+  .call--to--action {
+    width: calc(80% - 2rem); } }
 @media screen and (min-width: 800px) {
+  /* From Style.scss */
   .content--embed {
     min-height: 400px; }
 
   .small--logo {
     padding: 4rem 2rem;
     vertical-align: middle; } }
-/* Desktop viewport, screens 1024px and above */
 @media screen and (min-width: 1024px) {
+  /* From Style.scss */
   .heading--two {
     padding: 5rem 0 0 0;
     font-size: 3rem;
@@ -974,8 +779,195 @@ ol {
     max-width: 50%; }
 
   .geo--map {
-    height: 350px; } }
+    height: 350px; }
+
+  /* From Header.scss */
+  .header--primary {
+    padding: 0; }
+
+  .header--content {
+    max-width: 800px; }
+
+  .logo--primary {
+    width: 400px; }
+
+  .heading--one {
+    font-size: 3.5rem; }
+
+  .logo--subpage {
+    margin: 0 2rem 0 auto; }
+
+  .heading--subpage {
+    margin: 0 auto 0 2rem; }
+
+  .header--subpage {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+
+  .subpage--header--size {
+    height: 70vh; }
+
+  .call--to--action {
+    width: calc(60% - 2rem); }
+
+  .sub--heading {
+    font-size: 1.3rem;
+    line-height: 1.7rem; }
+
+  /* From Nav.scss */
+  /* Remove hamburger on desktop */
+  .handle--open {
+    display: none; }
+
+  /* Show <ul> on desktop */
+  .nav--primary--list {
+    transform: translateX(0);
+    height: auto;
+    width: 100%;
+    overflow: visible;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1rem;
+    position: relative; }
+
+  .nav--primary--list--container {
+    display: inline-block;
+    margin: 35px 0; }
+    .nav--primary--list--container:not(:last-child) {
+      border-right: solid 1px #FFF; }
+
+  .nav--primary--list--link {
+    padding: 5px 25px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #FFF; }
+    .nav--primary--list--link:hover {
+      color: #C9D300; }
+
+  .nav--primary--list--content {
+    width: calc(100% - 60px);
+    padding-left: 30px;
+    position: relative;
+    transform: translateY(0); }
+
+  .nav--active--link {
+    color: #C9D300; }
+
+  /* Phone number in top right */
+  .nav--contact {
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 0; }
+
+  .nav--contact--icon {
+    height: 30px;
+    transform: rotate(90deg); }
+
+  .nav--contact--icon--fill {
+    fill: #FFF; }
+
+  .nav--contact--number {
+    margin: 0 0 0 1rem;
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    font-size: 1.1rem;
+    letter-spacing: 1px; }
+
+  /* From Form.scss */
+  .contact--textbox {
+    max-width: 600px; }
+
+  .contact--file {
+    margin-top: 1.5rem;
+    width: 100%; }
+
+  .contact--label, .contact--input {
+    width: 80%;
+    max-width: 300px; }
+
+  .contact--flex {
+    display: flex; }
+
+  .contact--order--1 {
+    width: 50%;
+    order: 1; }
+
+  .contact--order--2 {
+    width: 50%;
+    order: 2; }
+
+  /* From Footer.scss */
+  .footer--primary {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .footer--right {
+    margin: 0 auto;
+    width: 30%;
+    order: 2; }
+
+  .footer--left {
+    margin: 0 auto;
+    width: 30%;
+    order: 1; }
+
+  .footer--address, .footer--info, .footer--email, .footer--text--gap, .footer--telephone {
+    width: 100%; }
+
+  .footer--credit {
+    width: 100%;
+    order: 3;
+    text-align: center; }
+
+  /* From Insurance.scss */
+  .insurance--main {
+    padding: 0 20px;
+    min-height: 100vh; }
+
+  .insurance--header {
+    padding: 5rem 0 0 0;
+    font-size: 2.5rem; }
+
+  .insurance--sub--header {
+    padding: 3rem 0 0 0;
+    font-size: 1.8rem;
+    line-height: 2.4rem; }
+
+  .insurance--selection--container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%; }
+
+  .insurance--help {
+    padding-top: 2rem; }
+
+  .insurance--selection {
+    margin: 2rem auto 1rem auto;
+    display: inline-block;
+    width: 33%; }
+
+  .links--out {
+    position: absolute;
+    width: 33%;
+    bottom: 1rem;
+    left: 1rem; }
+
+  .insurance--back {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    width: 100%; }
+    .insurance--back:first-child {
+      padding-top: 2rem; }
+
+  .insurance--progress {
+    margin-top: 1rem; } }
 @media screen and (min-width: 1350px) {
+  /* From Style.scss */
   .primary--section {
     max-width: 1000px; }
 
@@ -1008,6 +1000,25 @@ ol {
     margin: 4rem auto 1rem 0; }
 
   .about--right {
-    margin: 4rem 0 1rem auto; } }
+    margin: 4rem 0 1rem auto; }
+
+  /* From Header.scss */
+  .logo--primary {
+    width: 500px; }
+
+  .sub--heading {
+    margin: 4rem 0 1rem 0;
+    font-size: 1.6rem; }
+
+  .call--to--action {
+    margin: 3rem auto 1rem auto;
+    font-size: 1.3rem; }
+
+  /* From Footer.scss */
+  .footer--primary {
+    padding: 2rem 20%; }
+
+  .footer--right, .footer--left {
+    width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */

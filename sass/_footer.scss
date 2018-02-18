@@ -17,37 +17,3 @@
 .footer--credit {
   font-size: 0.8rem;
 }
-
-@media screen and (min-width: 1024px) {
-  .footer--primary {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer--right {
-    margin: 0 auto;
-    width: 30%;
-    order: 2;
-  }
-  .footer--left {
-    margin: 0 auto;
-    width: 30%;
-    order: 1;
-  }
-  .footer--address, .footer--info, .footer--email, .footer--text--gap, .footer--telephone {
-    width: 100%;
-  }
-  .footer--credit {
-    width: 100%;
-    order: 3;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1350px) {
-  .footer--primary {
-    padding: 2rem 20%;
-  }
-  .footer--right, .footer--left {
-    width: 30%;
-  }
-}

@@ -1,0 +1,30 @@
+@media screen and (min-width: 360px) {
+
+  /* From Header.scss */
+
+  .heading--one {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .logo--primary {
+    margin: 0 auto 2rem auto;
+    display: block;
+  }
+  .call--to--action {
+    width: calc(80% - 2rem);
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  
+  /* From Style.scss */
+
+  .content--embed {
+    min-height: 400px;
+  }
+  .small--logo {
+    padding: 4rem 2rem;
+    vertical-align: middle;
+  }
+}

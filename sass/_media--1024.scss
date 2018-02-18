@@ -1,0 +1,311 @@
+@media screen and (min-width: 1024px) {
+  
+  /* From Style.scss */
+  
+  .heading--two {
+    padding: 5rem 0 0 0;
+    font-size: 3rem;
+    text-align: left;
+  }
+  .shorter--heading {
+    padding: 0;
+  }  
+  .primary--section {
+    padding: 0 20px 5rem 20px;
+  }
+  .primary--section--text {
+    margin: 2rem 0 0 0;
+  }
+  .primary--section--flex {
+    margin: 0 auto; padding-bottom: 6rem;
+    max-width: 75%; 
+    display: flex; 
+  }
+  .primary--section--flex--child--1 {
+    width: 33%; order: 1;
+  }
+  .primary--section--flex--child--2 {
+    width: 33%; order: 2;
+  }
+  .primary--section--flex--child--3 {
+    width: 33%; order: 3;
+  }
+  .primary--section--icon {
+    padding: 6rem 0 0 0;
+  }
+  .primary--icon--text {
+    margin: 3rem auto 0 auto;
+    text-align: center;
+  }
+  .primary--icon--button {
+    margin: 3rem auto 0 auto;
+    padding: 0.7rem 0;
+  }
+  .section--text--short {
+    margin: 2rem auto 0 auto;
+    max-width: 80%;
+  }
+  .primary--paragraph {
+    max-width: 70%;
+  }
+
+  .smaller--section {
+    max-width: 700px;
+  }
+
+  .center--header {
+    text-align: center;
+    padding: 4rem 0 0 0;
+  }
+
+  .about--left {
+    margin: 3rem auto 0 0;
+  }
+
+  .about--right {
+    margin: 3rem 0 0 auto;
+  }
+  .contact--map {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    width: 50%;
+    height: calc(100% - 184px);
+  }
+  .flex--section {
+    display: flex;
+   }
+  .flex--2--col--left {
+    margin: 0 auto;
+    padding: 2rem 0;
+    order: 1;
+  }
+  .flex--2--col--right {
+    margin: 0 auto;
+    padding: 2rem 0;
+    order: 2;
+  }
+  .bigger--text {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: left;
+  }
+  .center--list {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  list-style-type: none;
+  }
+  .center--text {
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+  .center--list--item {
+    margin: 0;
+    padding: 0.2rem 0 0 0;
+  }
+  .short--text {
+    max-width: 50%;
+  }
+  .geo--map {
+    height: 350px;
+  }
+
+  /* From Header.scss */
+
+  .header--primary {
+    padding: 0;
+  }
+  .header--content {
+    max-width: 800px;
+  }
+  .logo--primary {
+    width: 400px;
+  }
+  .heading--one {
+    font-size: 3.5rem;
+  }
+  .logo--subpage {
+    margin: 0 2rem 0 auto;
+  }
+  .heading--subpage {
+    margin: 0 auto 0 2rem;
+  }
+  .header--subpage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .subpage--header--size {
+    height: 70vh;
+  }
+  .call--to--action {
+    width: calc(60% - 2rem);
+  }
+  .sub--heading {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  /* From Nav.scss */
+  
+  /* Remove hamburger on desktop */
+  .handle--open {
+    display: none;
+  }
+  /* Show <ul> on desktop */
+  .nav--primary--list {
+    transform: translateX(0);
+    height: auto;
+    width: 100%;
+    overflow: visible;
+    background-color: rgba(0,0,0,0);
+    font-size: 1rem;
+    position: relative;
+  }
+  .nav--primary--list--container {
+    display: inline-block;
+    margin: 35px 0;
+    &:not(:last-child) {
+      border-right: solid 1px #FFF;
+    }
+  }
+  .nav--primary--list--link {
+    padding: 5px 25px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #FFF;
+    &:hover {
+      color: #C9D300;
+    }
+  }
+  .nav--primary--list--content {
+    width: calc(100% - 60px);
+    padding-left: 30px;
+    position: relative;
+    transform: translateY(0);
+  }
+  .nav--active--link {
+    color: #C9D300;
+  }
+  /* Phone number in top right */
+  .nav--contact {
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 0;
+  }
+  .nav--contact--icon {
+    height: 30px;
+    transform: rotate(90deg);
+  }
+  .nav--contact--icon--fill {
+    fill: #FFF;
+  }
+  .nav--contact--number {
+    margin: 0 0 0 1rem;;
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  /* From Form.scss */
+
+  .contact--textbox {
+    max-width: 600px;
+  }
+  .contact--file {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .contact--label, .contact--input {
+    width: 80%;
+    max-width: 300px;
+  }
+  .contact--flex {
+    display: flex;
+  }
+  .contact--order--1 {
+    width: 50%;
+    order: 1;
+  }
+  .contact--order--2 {
+    width: 50%;
+    order: 2;
+  }
+
+  /* From Footer.scss */
+
+  .footer--primary {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer--right {
+    margin: 0 auto;
+    width: 30%;
+    order: 2;
+  }
+  .footer--left {
+    margin: 0 auto;
+    width: 30%;
+    order: 1;
+  }
+  .footer--address, .footer--info, .footer--email, .footer--text--gap, .footer--telephone {
+    width: 100%;
+  }
+  .footer--credit {
+    width: 100%;
+    order: 3;
+    text-align: center;
+  }
+
+  /* From Insurance.scss */
+
+  .insurance--main {
+    padding: 0 20px;
+    min-height: 100vh;
+  }
+  .insurance--header {
+    padding: 5rem 0 0 0;
+    font-size: 2.5rem;
+  }
+  .insurance--sub--header {
+    padding: 3rem 0 0 0;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .insurance--selection--container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
+  .insurance--help {
+    padding-top: 2rem;
+  }
+  .insurance--selection {
+    margin: 2rem auto 1rem auto;
+    display: inline-block;
+    width: 33%;
+  }
+  .links--out {
+    position: absolute;
+    width: 33%;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .insurance--back {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    &:first-child {
+      padding-top: 2rem;
+    }
+  }
+  .insurance--progress {
+    margin-top: 1rem;
+  }
+}

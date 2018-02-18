@@ -78,32 +78,6 @@
     transition: none;
   }
 }
-
 .contact--help {
   margin: 1rem 0 0 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .contact--textbox {
-    max-width: 600px;
-  }
-  .contact--file {
-    margin-top: 1.5rem;
-    width: 100%;
-  }
-  .contact--label, .contact--input {
-    width: 80%;
-    max-width: 300px;
-  }
-  .contact--flex {
-    display: flex;
-  }
-  .contact--order--1 {
-    width: 50%;
-    order: 1;
-  }
-  .contact--order--2 {
-    width: 50%;
-    order: 2;
-  }
 }
