@@ -178,26 +178,26 @@
           <h2 class="heading--two center-header blue--text">Quote Form</h2>
           <p class="sub--header">Fill out this form and we'll get back to you as soon as possible.</p>
           <form class="contact--form" method="POST" action="#">
-            <label class="contact--label">Name</label>
+            <label class="contact--label" for="name">Name</label>
             <p class="contact--help">What's your name?</p>
-            <input class="contact--input" type="text" name="name" required>
+            <input class="contact--input" type="text" name="name" id="name" required>
             <div class="contact--flex">
               <div class="contact--order--1">
-                <label class="contact--label">Email</label>
+                <label class="contact--label" for="email">Email</label>
                 <p class="contact--help">What's your email address?</p>
-                <input class="contact--input" type="email" name="email">
+                <input class="contact--input" type="email" id="email" name="email">
               </div>
               <div class="contact--order--2">
-                <label class="contact--label">Telephone</label>
+                <label class="contact--label" for="telephone">Telephone</label>
                 <p class="contact--help">What's your phone number?</p>
-                <input class="contact--input" type="tel" name="telephone">
+                <input class="contact--input" type="tel" id="telephone" name="telephone">
               </div>
             </div>
             <div class="contact--flex">
               <div class="contact--order--1">
-                <label class="contact--label">Description</label>
+                <label class="contact--label" for="description">Description</label>
                 <p class="contact--help">What can you tell us about the work?</p>
-                <textarea class="contact--textbox" required></textarea>
+                <textarea class="contact--textbox" id="description" required></textarea>
               </div>
               <div class="contact--order--2">
                 <label class="contact--label">Image Upload</label>
@@ -212,19 +212,19 @@
             <div class="contact--preferences">
               <p class="contact--help">How would you prefer we get back to you?</p>
               <div class="contact--preference--choice">
-                <input class="contact--checkbox" type="checkbox" name="pref-email" value="Email">
-                <label class="preference--label">Email</label>
+                <input class="contact--checkbox" type="checkbox" name="pref-email" value="Email" id="email--check">
+                <label class="preference--label" for="email--check">Email</label>
               </div>
               <div class="contact--preference--choice">
-                <input class="contact--checkbox" type="checkbox" name="pref-telephone" value="Telephone">
-                <label class="preference--label">Telephone</label>
+                <input class="contact--checkbox" type="checkbox" name="pref-telephone" value="Telephone" id="telephone--check">
+                <label class="preference--label" for="telephone--check">Telephone</label>
               </div>
               <div class="contact--preference--choice">
-                <input class="contact--checkbox" type="checkbox" name="pref-either" value="Either">
-                <label class="preference--label">Either</label>
+                <input class="contact--checkbox" type="checkbox" name="pref-either" value="Either" id="either--check">
+                <label class="preference--label" for="either--check">Either</label>
               </div>
             </div>
-            <button class="contact--button" type="submit">Send</button>
+            <button class="contact--button" type="submit" value="Send">Send</button>
           </form>
         </div>
       </section>
