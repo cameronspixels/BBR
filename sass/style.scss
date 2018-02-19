@@ -2,10 +2,6 @@
   font-family: 'Raleway', 'Avenir Next', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 100%; font-weight: 400;
 }
 
-*:focus {
-  background: #FFBF47;
-}
-
 body {
   margin: 0;
   background-color: #42413C; color: #42413C;
@@ -330,7 +326,7 @@ ol {
     width: 1rem;
     content: counter(item) ". ";
     counter-increment: item;
-    display: inline--block;
+    display: inline-block;
     list-style-type: none;
   }
 }
