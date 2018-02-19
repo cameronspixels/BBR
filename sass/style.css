@@ -380,18 +380,18 @@ The same few background images were  re-used in an attempt to reduce loading tim
 .testimonial--quote {
   margin-top: 2rem;
   font-weight: 400;
-  line-height: 1.5rem;
-  font-style: italic; }
+  line-height: 1.5rem; }
 
 .testimonial--quote--cite {
-  margin: 0 0 2rem 1rem;
-  font-weight: 400; }
+  margin: 1rem 0 2rem 1rem;
+  font-weight: 400;
+  font-style: italic; }
 
 .testimonial--break {
   margin: 3rem auto;
   width: 50%;
   display: block;
-  border: 0.25px solid #42413C; }
+  border: 0.5px solid #42413C; }
 
 .content--embed {
   margin-top: 2rem;
@@ -407,6 +407,17 @@ The same few background images were  re-used in an attempt to reduce loading tim
   margin-top: 1rem;
   display: inline-block;
   top: 2rem; }
+
+.news--figure {
+  margin: 1rem 0; }
+
+.image--full--width {
+  max-width: 100%; }
+
+.news--caption--text {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.9rem;
+  font-style: italic; }
 
 .blue--bg--button {
   margin: 3rem auto 1rem auto;
@@ -546,7 +557,7 @@ ol {
   font-size: 0.8rem; }
 
 .insurance--main {
-  min-height: 100vh;
+  min-height: calc(100vh - 3rem);
   padding: 2rem 5% 1rem 5%;
   background: linear-gradient(to bottom, rgba(0, 82, 125, 0.8), rgba(0, 82, 125, 0.4)), url(../img/background/bg--header.JPG) center no-repeat fixed;
   background-size: cover; }
@@ -920,7 +931,7 @@ ol {
 
   .footer--credit {
     width: 100%;
-    order: 3;
+    order: 4;
     text-align: center; }
 
   /* From Insurance.scss */
